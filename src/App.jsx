@@ -253,8 +253,8 @@ function MemoryCarousel({ onReplay }) {
       <section className="memory-wrap">
         <motion.div className="memory-heading" initial={false} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
           <PartyPopper size={34} />
-          <h1>Memory carousel</h1>
-          <p>Swap these cards with real photos later. The frame stays stable for portrait, square, or landscape images.</p>
+          <h1>Send pa ng pics beh para marami akong mailagay sa sunod hehe</h1>
+          <p>MUAAAA MUAAAA tsup tsup</p>
         </motion.div>
 
         <div className="carousel-stage">
