@@ -4,37 +4,49 @@ import React, { useMemo, useState } from 'react';
 
 const PASSCODE = [0, 5, 2, 9, 0, 4];
 
-// CUSTOMIZE LETTER: change these lines for your birthday message.
+
 const letterLines = [
-  'Happy birthday. I made this little digital letter because a plain greeting felt too small for someone who deserves color, motion, and a whole tiny celebration.',
-  'I hope this year gives you the soft kind of happiness: the one that shows up in calm days, funny moments, good people, and memories that stay bright.',
-  'You are appreciated more than these words can carry. Today is yours, and I hope it feels full of love from the first second to the last.'
+  'Happy birthday Bbq. Dahil Birthday mo na beh naisipan kong gawahan kita ng letter kaso wala akong pang delivery hehe kaya ito nalang muna.',
+  'I miss you na bebeko, sana masarap ulam mo beh hahahahaha, You deserve the best beh, at sana matupad pa yung mga pangarap mo this year at saka maging masaya ka palagi dahil deserve mo yan beh.',
+  'I love you beh, nga pala beh maghahanda ka kaya ng sphagetii kahit ayaw mo? hahahaahahahaha, pano mo pala matatago tong letter nato ey hahahah, byez beh muaaa muaaaaaa.'
 ];
 
 // CUSTOMIZE PHOTOS: put image files in /public/memories/ and set image: '/memories/your-file.jpg'.
 const memories = [
   {
-    title: 'First Page',
-    caption: 'Put your first favorite photo here later.',
-    image: '',
+    title: 'MUAAA MUAAA',
+    caption: 'Cute cute ng bebeko talaga.',
+    image: 'memories/cutieee.jpg',
     color: 'card-blue'
   },
   {
-    title: 'Sweet Moment',
-    caption: 'A space for a memory that still makes you smile.',
-    image: '',
+    title: '😘😘',
+    caption: 'Kunwari stolen.',
+    image: 'memories/bebeko.jpg',
     color: 'card-pink'
   },
   {
-    title: 'Bright Day',
-    caption: 'For the little moments that felt bigger than they looked.',
-    image: '',
+    title: 'Date natin sa abbas hahaha',
+    caption: 'Miss ko na mga dates natin hahaha.',
+    image: 'memories/green.jpg',
     color: 'card-yellow'
   },
   {
-    title: 'Soft Laugh',
-    caption: 'A page for the kind of joy that keeps echoing.',
-    image: '',
+    title: '😍😍',
+    caption: 'happy birthday bbq.',
+    image: 'memories/hot.jpg',
+    color: 'card-mint'
+  },
+  {
+    title: 'Nakakainlove',
+    caption: 'Ganda ganda ng bbq.',
+    image: 'memories/yellow.jpg',
+    color: 'card-yellow'
+  },
+  {
+    title: 'Cute ng bebe ko',
+    caption: 'First time nating magkasama sa anda hehehe.',
+    image: 'memories/anda.jpg',
     color: 'card-mint'
   }
 ];
@@ -205,7 +217,7 @@ function LetterScreen({ onNext }) {
           </span>
           <p>Birthday message</p>
         </div>
-        <h1>Your birthday letter</h1>
+        <h1>Happy Bday Beh</h1>
         <div className="letter-body">
           {letterLines.map((line, index) => (
             <motion.p

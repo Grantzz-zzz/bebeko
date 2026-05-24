@@ -328,16 +328,20 @@ button {
 .carousel-stage {
   position: relative;
   width: min(100%, 62rem);
-  min-height: 28rem;
+  min-height: 36rem;
   margin-top: 1.25rem;
   display: grid;
   place-items: center;
   perspective: 1100px;
+  z-index: 1;
 }
 
 .memory-card {
   position: absolute;
   width: min(74vw, 21rem);
+  height: 32rem;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 6.4rem;
   overflow: hidden;
   border: 3px solid var(--ink);
   border-radius: 1.5rem;
@@ -352,33 +356,45 @@ button {
 
 .memory-photo {
   display: grid;
-  aspect-ratio: 4 / 4.5;
+  min-height: 0;
   place-items: center;
   color: var(--slate);
+  overflow: hidden;
+  padding: 0.35rem;
 }
 
 .memory-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 0.85rem;
+  background-color: rgba(15, 23, 42, 0.18);
 }
 
 .memory-copy {
-  padding: 1rem;
+  min-height: 0;
+  padding: 0.72rem 0.85rem;
   color: var(--slate);
   background-color: #e2e8f0;
+  overflow: hidden;
 }
 
 .memory-copy h2 {
   margin: 0;
-  font-size: 1.45rem;
+  font-size: 1.05rem;
   font-weight: 900;
+  line-height: 1.1;
 }
 
 .memory-copy p {
-  margin: 0.4rem 0 0;
-  line-height: 1.5;
+  margin: 0.25rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.35;
   font-weight: 600;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .card-blue .memory-photo {
@@ -398,6 +414,8 @@ button {
 }
 
 .carousel-controls {
+  position: relative;
+  z-index: 30;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -437,6 +455,8 @@ button {
 }
 
 .replay-btn {
+  position: relative;
+  z-index: 30;
   margin-top: 0.4rem;
   background-color: var(--coral);
   box-shadow: 0 8px 0 #be314d;
@@ -470,10 +490,12 @@ button {
   }
 
   .carousel-stage {
-    min-height: 26rem;
+    min-height: 32rem;
   }
 
   .memory-card {
     width: min(82vw, 18rem);
+    height: 28rem;
+    grid-template-rows: minmax(0, 1fr) 5.8rem;
   }
 }
